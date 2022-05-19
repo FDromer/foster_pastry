@@ -1,0 +1,788 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+  
+/* Header specification */
+
+#header {
+  display: block;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: #fff; /*#fff*/
+}
+
+.navbar-one {
+  display: block;
+  height: 75px;
+}
+
+.nv-one-left {
+  float: left;
+}
+
+.pastd {
+  display: flex;
+  line-height: 20px;
+  padding-top: 15px;
+}
+
+.pastdk,
+.fostdk {
+  Font-Family: 'Abril Fatface', Cursive;
+}
+
+#space {
+  margin-left: 187px;
+}
+
+.fostdk {
+  font-size: 40px;
+  color: #eb600f; /*#eb600f*/
+}
+
+.pastdk {
+  font-size: 30px;
+  padding-left: 25px;
+  color: #404040; /*#404040*/
+}
+
+.nv-one-right {
+  float: right;
+}
+
+.icondesk {
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.fa-solid {
+  font-size: 22px;
+  margin-right: 15px;
+  padding-left: 15px;
+}
+
+.icondesk a {
+  color: #404040; /*#404040*/
+}
+ 
+.navbar-two {
+  display: flex;
+  background-color: #E5E4E2;
+  /*background-color: #f8f5f0;*/
+  /*background-color: #404040; /*#404040*/
+  width: 100%;
+  padding: 0px 14%;
+}
+
+.navbar-two ul li {
+  position: relative;
+  float: left;
+}
+
+.navbar-two ul li a {
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  color: #000;
+  /*color: #fff;*/
+  padding: 20px;
+  display: block;
+}
+
+.navbar-two ul li ul {
+  position: absolute;
+  background-color: #E5E4E2;
+  /*background-color: #404040;*/
+  width: 200px;
+} 
+
+.navbar-two ul li ul li {
+  width: 100% ;
+  border-top: 1px solid #fff;
+}
+
+.imgdeskpas {
+  width: 115px;
+  height: 110px;
+}
+
+#header img {
+  position: fixed;
+  top: 14px;
+  left: 40px;
+  z-index: 999;
+}
+
+label {
+  float: left;
+  font-size: 25px;
+  color: #000;
+  /*color: #fff;*/
+}
+
+/*hover effect header*/
+
+.navbar-two ul li a:hover {
+  color: #eb600f;
+}
+
+.icondesk a:hover {
+  color: #eb600f; /*#eb600f*/
+}
+
+.navbar-two ul li:focus-within > ul,
+.navbar-two ul li:hover > ul {
+  display: initial;
+}
+
+#menu,
+label,
+.pastm,
+.iconmob,
+.checkbtn,
+.sub-products,
+.sub-training,
+.navbar-two ul li ul {
+  display: none;
+}
+
+/* responsive header */
+
+@media only screen and (max-width: 920px) {
+   ul,
+  .pastd,
+  .imgdeskpas,
+  .icondesk {
+    display: none;
+  }
+
+  #header {
+    position: fixed;
+    background-color: #fff;
+  }
+
+  .navbar-one {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+  }  
+
+  .iconmob {
+    display: flex;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
+  .fa-solid {
+    font-size: x-large;
+    margin-right: 20px;
+    padding-left: 15px;
+  }
+
+  .iconmob a {
+    color: #404040; /*#404040*/
+  }
+
+  .iconmob a:hover {
+    color: #eb600f; /*#eb600f*/
+  }
+
+  .pastm {
+    display: flex;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-left: 40px;
+  }
+
+  .fostmo {
+    font-size: 40px;
+    color: #eb600f; /*#eb600f*/
+  }
+
+  .pastmo {
+    font-size: 30px;
+    padding-left: 25px;
+  }
+
+  .fostmo,
+  .pastmo {
+    font-family: 'Abril Fatface', Cursive;
+  }
+  
+  label {
+    display: initial;
+    margin-left: 15px;
+  }
+
+  .navbar-two {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #E5E4E2;
+    /*background-color: #404040;*/
+  }
+
+  .navbar-two ul li {
+    width: 100%;
+  }
+
+  .navbar-two ul li ul {
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar-two ul li ul li:last-child {
+    border-bottom: 1px solid #fff;
+  }
+
+  #menu:checked ~ ul {
+    display: initial;
+  }
+ 
+}
+
+/* specification of the first section main content */
+
+.mission {
+  background: url("/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/1.webp") no-repeat center / cover;
+  height: 90vh; 
+  margin: 35px 35px;
+  display: flex;
+}
+
+.fimgtexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%;
+  margin-left:90px;
+}
+
+.fimgtexto .textone {
+  Font-Family: 'Abril Fatface', Cursive;
+  color: #e5e4e2;
+  font-size: 70px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.fimgtexto .textow {
+  Font-Family: 'Abril Fatface', Cursive;
+  color: #e5e4e2;
+  font-size: 35px;
+  max-width: 100%;
+}
+
+/* specification second section main content */
+
+.trainsect {
+  margin: 35px 35px;
+}
+
+.trainsect-text {
+  display: block;
+  /*max-width: 1600px;*/
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 130px;
+}
+
+.trainsect-text h2 {
+  font-weight: 500;
+  color: #000;
+  font-size: 36px;
+  font-family: 'PT Serif', serif;
+}
+
+.trainsect-text p {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 18px;
+}
+
+.trainsect-text h2,
+.trainsect-text p {
+  text-align: center;
+}
+
+.training-content {
+  position: relative;
+  background-color: #e5e4e2;
+  height: 185vh;
+  width: auto;
+}
+
+.pastry-itemvirt {
+  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/1587387181_LIVE_Online_COOKING_CLASSES_from_home!_Beginner_level.jpg') no-repeat center / cover;
+  width: 40%;
+  height: 550px;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+  position: absolute;
+  top: -60px;
+  left: 100px;
+}
+
+.pastry-itemlab {
+  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/01_gh2_ntcculinary.jpg') no-repeat center / cover;
+  width: 40%;
+  height: 550px;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+  position: absolute;
+  left: 768px;
+  top: 225px;
+}
+
+.pastry-itemloca {
+  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/location.jpg') no-repeat center / cover;
+  width: 40%;
+  height: 550px;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+  position: absolute;
+  top: 600px;
+  left: 100px;
+}
+
+.elemc {
+  width: 65%;
+  height: 220px;
+  background-color: #e5e4e2;
+}
+
+.hstyle {
+  font-weight: lighter;
+  font-size: 34px;
+  font-family: 'Abril Fatface', Cursive;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contentc {
+  width: auto;
+  height: 175vh;
+}
+
+.contentc p {
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 30px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.btnone {
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  background-color: #eb600f;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 25px;
+}
+
+.btntwo {
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #eb600f;
+  padding: 10px 20px;
+}
+
+/* hover effect second section main content */
+
+.btnone:hover {
+  background-color: #fff;
+  color: #eb600f;
+  border: 1px solid #eb600f;
+}
+
+.btntwo:hover {
+  background-color: #fff;
+  color: #eb600f;
+  border: 1px solid #000;
+}
+
+/* specification third section main content */
+
+.productsect-text {
+  display: block;
+  /*max-width: 1600px;*/
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.productsect-text h2 {
+  font-weight: 500;
+  color: #000;
+  font-size: 36px;
+  font-family: 'PT Serif', serif;
+}
+
+.productsect-text p {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 18px;
+}
+
+.productsect-text h2,
+.productsect-text p {
+  text-align: center;
+}
+
+img {
+  max-width: 325px;
+  height: 250px;
+}
+
+.product-elem {
+  display: flex;
+  position: relative;
+  margin: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.product-elem::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.itemp {
+  margin: 20px;
+  scroll-snap-align: start;
+}
+
+.titlep {
+  height: 50px;
+  width: 325px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 24px;
+  background-color: #eb600f;
+  transition: 300ms ease-in-out;
+  opacity: 0.7;
+}
+
+.titleh {
+  Font-Family: 'Abril Fatface', Cursive;
+  text-align: center;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.titled {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 15px;
+  visibility: hidden;
+}
+
+.titles {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* hover effect third main content */
+
+.itemp:hover {
+  cursor: pointer;
+}
+
+.itemp:hover .titlep {
+  height: 125px;
+  bottom: 17px;
+  background-color: #eb600f;
+}
+
+.itemp:hover .titled {
+  visibility: visible;
+}
+
+.itemp:hover .titlep,
+.itemp:hover img {
+  transform: scale(1.1);
+}
+
+/* specification fouth section main content */
+
+.teamsect {
+  margin: 35px 35px;
+}
+
+.teamsect-text {
+  max-width: 90%;
+  height: auto;
+  /*margin-top: 50px;
+  margin-bottom: 75px;*/
+}
+
+.teamsect-text {
+  display: block;
+  /*max-width: 1600px;*/
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.teamsect-text h2 {
+  font-weight: 500;
+  color: #000;
+  font-size: 36px;
+  font-family: 'PT Serif', serif;
+}
+
+.teamsect-text p {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  padding-top: 18px;
+}
+
+.teamsect-text h2,
+.teamsect-text p {
+  text-align: center;
+}
+
+.imgchef {
+  min-height: 300px;
+  max-width: 210px;
+}
+
+.team-background {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/teamimg.jpeg') no-repeat center / cover;
+  min-height: 500px;
+  width: auto;
+}
+
+.teamchef {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.teamp {
+  min-height: 145px;
+  max-width: 210px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 25px;
+  transition: 300ms ease-in-out;
+  opacity: 0.7;
+}
+
+.teamp p {
+  visibility: hidden;
+}
+
+.teamp:hover {
+  cursor: pointer;
+  background-color: #eb600f
+}
+
+.teamp:hover p {
+  visibility: visible;
+}
+
+.teamp h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  Font-Family: 'Abril Fatface', Cursive;
+  /*color: #E5E4E2;*/
+  /*color: #000;*/
+  color: #fff;
+}
+
+.teamp p {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 920px) {
+  .team-background {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .teamchef {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+/* Footer full specification */
+
+footer {
+  background-color: #e5e4e2;
+  padding-top: 50px;
+}
+
+.fpast-content {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.fpast-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 85px;
+}
+
+.fpast-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.fpast-col h2 {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'PT Serif', serif;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.fpast-col h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #eb600f;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.fpast-col ul {
+  list-style: none;
+}
+
+.fpast-col ul li:not(:last-child) {
+  padding-bottom: 12px;
+}
+
+.fpast-col ul li {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.fpast-col ul li:hover {
+  color: #eb600f;
+  padding-left: 8px;
+}
+
+.fpast-col .fpast-link a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  padding: 12px 0px 0px 14px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #404040;
+  line-height: 40%;
+  color: #e5e4e2;
+  transition: all 0.5 ease;
+}
+
+.fpast-col .fpast-link a:hover {
+  color: #eb600f;
+  background-color: #fff;
+}
+
+.fpast-copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #404040;
+}
+
+.fpast-copyr {
+  display: inline-flex;
+}
+
+.fpast-copyr a {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.fpast-copyr a,
+.fpast-copy p {
+  color: #404040;
+  font-size: 14px;
+}
+
+.fpast-copyr a:not(:last-child) {
+  border-right: 1px solid #404040;
+}
+
+.fpast-copyr a:hover {
+  text-decoration: underline;
+}
+
+/* responsive footer */
+
+@media only screen and (max-width: 920px) {
+  .fpast-col ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .fpast-copy {
+    display: block;
+    flex-direction: column;
+  }
+
+  .fpast-copy p {
+    padding-bottom: 20px;
+    margin-left: 18px;
+  }
+
+  .fpast-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .fpast-col {
+    width: 190%;
+    margin-bottom: 30px;
+  }
+}
