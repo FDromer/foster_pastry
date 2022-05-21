@@ -78,9 +78,7 @@ body {
  
 .navbar-two {
   display: flex;
-  background-color: #E5E4E2;
-  /*background-color: #f8f5f0;*/
-  /*background-color: #404040; /*#404040*/
+  background-color: #e5e4e2; /*#e5e4e2*/
   width: 100%;
   padding: 0px 14%;
 }
@@ -93,22 +91,20 @@ body {
 .navbar-two ul li a {
   font-size: 16px;
   font-family: 'PT Sans', sans-serif;
-  color: #000;
-  /*color: #fff;*/
+  color: #000; /*#000*/
   padding: 20px;
   display: block;
 }
 
 .navbar-two ul li ul {
   position: absolute;
-  background-color: #E5E4E2;
-  /*background-color: #404040;*/
+  background-color: #e5e4e2; /*#e5e4e2*/
   width: 200px;
 } 
 
 .navbar-two ul li ul li {
   width: 100% ;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #fff; /*#fff*/
 }
 
 .imgdeskpas {
@@ -126,14 +122,13 @@ body {
 label {
   float: left;
   font-size: 25px;
-  color: #000;
-  /*color: #fff;*/
+  color: #000; /*#000*/
 }
 
 /*hover effect header*/
 
 .navbar-two ul li a:hover {
-  color: #eb600f;
+  color: #eb600f; /*#eb600f*/
 }
 
 .icondesk a:hover {
@@ -229,8 +224,7 @@ label,
     left: 0;
     right: 0;
     padding: 10px;
-    background-color: #E5E4E2;
-    /*background-color: #404040;*/
+    background-color: #e5e4e2; /*#e5e4e2*/
   }
 
   .navbar-two ul li {
@@ -243,7 +237,7 @@ label,
   }
 
   .navbar-two ul li ul li:last-child {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff; /*#fff*/
   }
 
   #menu:checked ~ ul {
@@ -256,7 +250,8 @@ label,
 
 .mission {
   background: url("/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/1.webp") no-repeat center / cover;
-  height: 90vh; 
+  min-height: 90vh;
+  width: auto;
   margin: 35px 35px;
   display: flex;
 }
@@ -267,13 +262,15 @@ label,
   align-items: center;
   justify-content: center;
   align-content: center;
-  max-width: 100%;
-  margin-left:90px;
+  width: auto;
+  margin-left: 90px;
 }
 
 .fimgtexto .textone {
   Font-Family: 'Abril Fatface', Cursive;
-  color: #e5e4e2;
+  /*color: #000;*/
+  color: #e5e4e2; /*#e5e4e2*/
+  margin-left: -100px;
   font-size: 70px;
   margin-bottom: 10px;
   max-width: 100%;
@@ -281,10 +278,13 @@ label,
 
 .fimgtexto .textow {
   Font-Family: 'Abril Fatface', Cursive;
-  color: #e5e4e2;
+  /*color: #000;*/
+  color: #e5e4e2; /*#e5e4e2*/
   font-size: 35px;
-  max-width: 100%;
+  width: 100%;
 }
+
+
 
 /* specification second section main content */
 
@@ -297,7 +297,7 @@ label,
   /*max-width: 1600px;*/
   height: auto;
   margin-top: 60px;
-  margin-bottom: 130px;
+  margin-bottom: 150px;
 }
 
 .trainsect-text h2 {
@@ -319,95 +319,100 @@ label,
   text-align: center;
 }
 
-.training-content {
+.trainobject {
   position: relative;
-  background-color: #e5e4e2;
-  height: 185vh;
-  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f8f5f0;
+  min-height: 630px;
 }
 
-.pastry-itemvirt {
+.itemra {
   background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/1587387181_LIVE_Online_COOKING_CLASSES_from_home!_Beginner_level.jpg') no-repeat center / cover;
-  width: 40%;
-  height: 550px;
-  display: flex;
-  justify-content: baseline;
-  align-items: flex-end;
-  position: absolute;
-  top: -60px;
-  left: 100px;
+  width: 400px;
+  min-height: 500px;
+  position: relative;
+  bottom: 100px;
 }
 
-.pastry-itemlab {
+.itemrb {
   background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/01_gh2_ntcculinary.jpg') no-repeat center / cover;
-  width: 40%;
-  height: 550px;
-  display: flex;
-  justify-content: baseline;
-  align-items: flex-end;
-  position: absolute;
-  left: 768px;
-  top: 225px;
+  width: 400px;
+  min-height: 500px;
+  position: relative;
+  bottom: 100px;
 }
 
-.pastry-itemloca {
-  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/location.jpg') no-repeat center / cover;
-  width: 40%;
-  height: 550px;
-  display: flex;
-  justify-content: baseline;
-  align-items: flex-end;
-  position: absolute;
-  top: 600px;
-  left: 100px;
+
+.itemrc {
+  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/location.jpg'), no-repeat center / cover;
+  width: 400px;
+  min-height: 500px;
+  position: relative;
+  bottom: 100px;
 }
 
-.elemc {
-  width: 65%;
-  height: 220px;
+.trainelem {
+  margin: 10px;
+}
+
+.traincont {
   background-color: #e5e4e2;
+  position: relative;
+  bottom: -440px;
+  left: 40px;
+  max-width: 310px;
+  min-height: 210px;
 }
 
-.hstyle {
+/* this is for the respnsive  display: block;
+  margin-bottom: 10px;*/
+
+  .hstyle {
   font-weight: lighter;
-  font-size: 34px;
+  font-size: 30px;
   font-family: 'Abril Fatface', Cursive;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.contentc {
-  width: auto;
-  height: 175vh;
-}
-
-.contentc p {
+.traincont p {
   font-size: 18px;
   font-family: 'PT Sans', sans-serif;
   line-height: 30px;
-  margin-right: 15px;
-  margin-bottom: 25px;
+  padding-right: 24px;
+  padding-bottom: 15px;
+  padding-left: 24px;
 }
 
 .btnone {
   display: inline-block;
+  flex-direction: row;
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   background-color: #eb600f;
   color: #fff;
-  padding: 10px 20px;
-  margin-right: 25px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-left: 25px;
 }
 
 .btntwo {
   display: inline-block;
+  flex-direction: row;
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   color: #000;
   border: 1px solid #eb600f;
-  padding: 10px 20px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
-
 /* hover effect second section main content */
 
 .btnone:hover {
@@ -535,13 +540,11 @@ img {
 .teamsect-text {
   max-width: 90%;
   height: auto;
-  /*margin-top: 50px;
-  margin-bottom: 75px;*/
 }
 
 .teamsect-text {
   display: block;
-  /*max-width: 1600px;*/
+  max-width: 1600px;
   height: auto;
   margin-top: 60px;
   margin-bottom: 50px;
@@ -568,7 +571,7 @@ img {
 
 .imgchef {
   min-height: 300px;
-  max-width: 210px;
+  width: 210px;
 }
 
 .team-background {
@@ -577,22 +580,22 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/teamimg.jpeg') no-repeat center / cover;
-  min-height: 500px;
+  min-height: 550px;
   width: auto;
 }
 
 .teamchef {
-  padding-top: 30px;
+  display: block;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .teamp {
-  min-height: 145px;
+  min-height: 140px;
   max-width: 210px;
-  box-sizing: border-box;
   position: absolute;
-  bottom: 25px;
   transition: 300ms ease-in-out;
   opacity: 0.7;
 }
@@ -603,7 +606,7 @@ img {
 
 .teamp:hover {
   cursor: pointer;
-  background-color: #eb600f
+  background-color: #eb600f;
 }
 
 .teamp:hover p {
@@ -615,8 +618,6 @@ img {
   font-size: 30px;
   font-weight: bold;
   Font-Family: 'Abril Fatface', Cursive;
-  /*color: #E5E4E2;*/
-  /*color: #000;*/
   color: #fff;
 }
 
@@ -631,11 +632,18 @@ img {
   .team-background {
     display: flex;
     flex-direction: row;
+    position: relative;
   }
 
   .teamchef {
-    display: flex;
+    display: block;
     flex-direction: row;
+    margin-bottom: 145px;
+  }
+
+  .teamp {
+    display: block;
+    position: absolute;
   }
 
 }
