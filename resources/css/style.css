@@ -249,7 +249,7 @@ label,
 /* specification of the first section main content */
 
 .mission {
-  background: url("/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/1.webp") no-repeat center / cover;
+  background: url("/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/foster-pastry-mainimg.webp") no-repeat center / cover;
   min-height: 90vh;
   width: auto;
   margin: 35px 35px;
@@ -330,7 +330,7 @@ label,
 }
 
 .itemra {
-  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/1587387181_LIVE_Online_COOKING_CLASSES_from_home!_Beginner_level.jpg') no-repeat center / cover;
+  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/foster-pastry-virtual.jpg') no-repeat center / cover;
   width: 400px;
   min-height: 500px;
   position: relative;
@@ -338,7 +338,7 @@ label,
 }
 
 .itemrb {
-  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/01_gh2_ntcculinary.jpg') no-repeat center / cover;
+  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/foster-pastry-lab.jpg') no-repeat center / cover;
   width: 400px;
   min-height: 500px;
   position: relative;
@@ -347,7 +347,7 @@ label,
 
 
 .itemrc {
-  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/location.jpg'), no-repeat center / cover;
+  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/foster-pastry-location.webp'), no-repeat center / cover;
   width: 400px;
   min-height: 500px;
   position: relative;
