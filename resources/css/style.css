@@ -303,7 +303,6 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /*background: url("../images/foster-pastry-mainimg.webp") no-repeat center / cover;*/
   min-height: 90vh;
   width: auto;
   margin: 35px 35px;
@@ -350,7 +349,10 @@ label {
 /* responsive first section main content */
 @media only screen and (max-width: 920px) {
   .mission {
-    background: url("/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/foster-pastry-mainimg.webp") no-repeat center / cover;
+    background-image: url('../images/foster-pastry-mainimg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     min-height: 90vh;
     width: 100%;
     margin-left: auto;
@@ -407,15 +409,24 @@ label {
 }
 
 .itemra {
-  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/foster-pastry-virtual.jpg') no-repeat center / cover;
+  background-image: url('../images/foster-pastry-virtual.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .itemrb {
-  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/foster-pastry-lab.jpg') no-repeat center / cover;
+  background-image: url('../images/foster-pastry-lab.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .itemrc {
-  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/foster-pastry-location.webp'), no-repeat center / cover;
+  background-image: url('../images/foster-pastry-location.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .trainelem {
@@ -724,7 +735,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: url('/home/foster/Desktop/Codecademy_FrontEnd/foster_pastery/resources/images/teamimg.jpeg') no-repeat center / cover;
+  background-image: url('../images/teamimg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 550px;
   width: 100%;
 }
