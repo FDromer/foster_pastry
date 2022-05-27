@@ -6,4 +6,4 @@ FOSTER PASTRY, landing webpage of a Pastry Company.
 
 ![FOSTER PASTRY](./resources/images/pastry.jpg)
 
-This is the challenge project: Company Home Page from (https://www.codecademy.com/) ![Frontend Path]
+This is the challenge project: Company Home Page from (https://www.codecademy.com/) **Frontend Path**
