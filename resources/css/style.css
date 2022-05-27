@@ -299,7 +299,7 @@ label {
 
 /* First section characteristics */
 .mission {
-  background: url("/resources/images/foster-pastry-mainimg.webp") no-repeat center / cover;
+  background: url("./resources/images/foster-pastry-mainimg.webp") no-repeat center / cover;
   min-height: 90vh;
   width: auto;
   margin: 35px 35px;
